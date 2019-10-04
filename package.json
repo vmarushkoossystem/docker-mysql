@@ -1,0 +1,9 @@
+{
+  "name": "docker-mysql",
+  "version": "1.0.0",
+  "scripts": {
+    "volume:create": "docker volume create mysqldata",
+    "docker:build": "docker build -t docker-mysql .",
+    "docker:run": "docker run -id --name docker-mysql-1 -v mysqldata:/var/lib/mysql -p 3307:3306 docker-mysql"
+  }
+}

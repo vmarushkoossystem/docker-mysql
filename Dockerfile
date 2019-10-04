@@ -1,0 +1,2 @@
+FROM mysql:5.7.27 as mysql
+ENV MYSQL_ALLOW_EMPTY_PASSWORD=true
